@@ -1,0 +1,134 @@
+#root {
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* React Flow Custom Styling */
+.react-flow__node {
+  background: #1a1a2e;
+  border: 2px solid #85409D;
+  border-radius: 8px;
+  padding: 10px;
+  color: #e0e0e0;
+}
+
+.react-flow__node.selected {
+  border-color: #b366ff;
+  box-shadow: 0 0 10px rgba(133, 64, 157, 0.5);
+}
+
+.react-flow__edge {
+  stroke: #85409D;
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected {
+  stroke: #b366ff;
+}
+
+.react-flow__controls {
+  background: #1a1a2e !important;
+  border: 1px solid #85409D !important;
+  border-radius: 8px !important;
+}
+
+.react-flow__controls button {
+  background: #2a2a3e !important;
+  border: 1px solid #85409D !important;
+  color: #e0e0e0 !important;
+}
+
+.react-flow__controls button:hover {
+  background: #3a3a4e !important;
+}
+
+.react-flow__minimap {
+  background: #1a1a2e !important;
+  border: 1px solid #85409D !important;
+  border-radius: 8px !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #85409D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b366ff;
+}
+
+/* Sonner Toast Custom Styling */
+.success-toast {
+  background: #1a2e1a !important;
+  border: 1px solid #4ade80 !important;
+  color: #e0e0e0 !important;
+}
+
+.success-toast [data-icon] {
+  color: #4ade80 !important;
+}
+
+.success-toast [data-title] {
+  color: #4ade80 !important;
+}
+
+.success-toast [data-description] {
+  color: #d1d5db !important;
+}

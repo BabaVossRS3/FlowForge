@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0a0a0a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --radius: 0.625rem;
+  --background: #0a0a0a;
+  --foreground: #e0e0e0;
+  --card: #1a1a2e;
+  --card-foreground: #e0e0e0;
+  --popover: #1a1a2e;
+  --popover-foreground: #e0e0e0;
+  --primary: #85409D;
+  --primary-foreground: #ffffff;
+  --secondary: #2a2a3e;
+  --secondary-foreground: #e0e0e0;
+  --muted: #2a2a3e;
+  --muted-foreground: #999999;
+  --accent: #85409D;
+  --accent-foreground: #ffffff;
+  --destructive: #ff4444;
+  --border: #85409D;
+  --input: #1a1a2e;
+  --ring: #85409D;
+  --chart-1: #85409D;
+  --chart-2: #b366ff;
+  --chart-3: #6600cc;
+  --chart-4: #a855f7;
+  --chart-5: #d946ef;
+  --sidebar: #0f0f1e;
+  --sidebar-foreground: #e0e0e0;
+  --sidebar-primary: #85409D;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #85409D;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #85409D;
+  --sidebar-ring: #85409D;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #e0e0e0;
+  --card: #1a1a2e;
+  --card-foreground: #e0e0e0;
+  --popover: #1a1a2e;
+  --popover-foreground: #e0e0e0;
+  --primary: #85409D;
+  --primary-foreground: #ffffff;
+  --secondary: #2a2a3e;
+  --secondary-foreground: #e0e0e0;
+  --muted: #2a2a3e;
+  --muted-foreground: #999999;
+  --accent: #85409D;
+  --accent-foreground: #ffffff;
+  --destructive: #ff4444;
+  --border: #85409D;
+  --input: #1a1a2e;
+  --ring: #85409D;
+  --chart-1: #85409D;
+  --chart-2: #b366ff;
+  --chart-3: #6600cc;
+  --chart-4: #a855f7;
+  --chart-5: #d946ef;
+  --sidebar: #0f0f1e;
+  --sidebar-foreground: #e0e0e0;
+  --sidebar-primary: #85409D;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #85409D;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #85409D;
+  --sidebar-ring: #85409D;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* React Flow Controls styling */
+.react-flow__controls {
+  background-color: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-width: 0 !important;
+  gap: 12px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.react-flow__controls-button {
+  background-color: #1a1a2e !important;
+  border: 0 !important;
+  border-width: 0 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #2a2a3e !important;
+}
+
+.react-flow__controls-button svg {
+  stroke: #ffffff !important;
+  fill: #ffffff !important;
+}
